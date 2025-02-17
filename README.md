@@ -20,6 +20,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - An Active Azure subscription.
 - Azure Virtual Machine running **Windows 10 (22H2)**.
 - Administrator access to the Windows VM.
+
 <h2>Installation Steps</h2>
 
 <p>
@@ -27,7 +28,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
 <p>
-Create an Azure Virtual Machine Windows 10 (22H2), 2 vCPUs
+Create an Azure Virtual Machine Windows 10 (22H2)
+
+When Choosing the size, you need at least 2 vCPUs
 
 - Name: osticket-vm
 
@@ -47,7 +50,7 @@ Log into the VM with Remote Desktop using the Public IP address.
 </p>
 
 <p>
-Within the VM (osticket-vm), got to your browser and search "osticket.com/download". 
+Within the VM (osticket-vm), go to your browser and search "osticket.com/download". 
 </p>
 
 <p>
@@ -59,8 +62,9 @@ Make an account and download the zip folder. The folder should be called “osTi
 </p>
 
 <p>
-Install / Enable IIS in Windows WITH CGI
-World Wide Web Services -> Application Development Features -> [X] CGI
+Install / Enable IIS in Windows WITH CGI.
+  
+Go to World Wide Web Services Application, Click on Development Features, and enable CGI.
 </p>
 
 <p>
@@ -82,7 +86,7 @@ From the “osTicket-Installation-Files” folder install the Rewrite Module
 </p>
 
 <p>
-Create the directory C:\PHP
+Go to "This PC", then to "Windsows (C:)", and create a new folder naemd "PHP".
 
 From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 into the “C:\PHP” folder
 </p>
@@ -108,13 +112,9 @@ From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 & choose
 </p>
 
 <p>
-Launch Configuration Wizard (after install) ->
+Now launch Configuration Wizard (after install) using Standard Configuration.
 
-Standard Configuration ->
-
-Username: johndoe
-
-Password: Password1!
+(Username: johndoe / Password: Password1!)
 </p>
 
 <p>
@@ -122,7 +122,7 @@ Password: Password1!
 </p>
 
 <p>
-Open IIS as an Admin
+Open IIS as an Admin.
 </p>
 
 <p>
@@ -131,7 +131,8 @@ Open IIS as an Admin
 
 <p>
 Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
-Reload IIS (Open IIS, Stop and Start the server)
+  
+Reload IIS (Open IIS, Stop and Start the server).
 </p>
 
 <p>
@@ -139,7 +140,7 @@ Reload IIS (Open IIS, Stop and Start the server)
 </p>
 
 <p>
-Finally, you can install osTicket v1.15.8
+Finally, you can install osTicket v1.15.8.
 </p>
 
 <p>
@@ -158,13 +159,9 @@ Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
 </p>
 
 <p>
-Note that some extensions are not enabled
+Go back to IIS, sites, click default, and then to osTicket.
 
-- Go back to IIS, sites -> Default -> osTicket
-
-- Double-click PHP Manager
-
-- Click “Enable or disable an extension”
+Double-click PHP Manager & Click “Enable or disable an extension”
 
   - Enable: php_imap.dll
 
@@ -172,7 +169,7 @@ Note that some extensions are not enabled
 
   - Enable: php_opcache.dll
 
-- Refresh the osTicket site in your browser, observe the changes  
+Refresh the osTicket site, and ensure new extensions are enabled.
 </p>
 
 <p>
@@ -214,7 +211,7 @@ Continue Setting up osTicket in the browser (click Continue)
 </p>
 
 <p>
-From the “osTicket-Installation-Files” folder, install HeidiSQL & open the file
+From the “osTicket-Installation-Files” folder, install HeidiSQL & open the file.
 </p>
 
 <p>
@@ -222,7 +219,7 @@ From the “osTicket-Installation-Files” folder, install HeidiSQL & open the f
 </p>
 
 <p>
-Create a new session (User: root / Password: root) & connect to the session
+Create a new session (User: root / Password: root) & connect to the session.
 </p>
 
 <p>
@@ -230,7 +227,7 @@ Create a new session (User: root / Password: root) & connect to the session
 </p>
 
 <p>
-Create a database called “osTicket”
+Create a database called “osTicket”.
 </p>
 
 <p>
@@ -238,7 +235,7 @@ Create a database called “osTicket”
 </p>
 
 <p>
-Continue Setting up osTicket in the browser
+Continue Setting up osTicket in the browser.
 
 - MySQL Database: osTicket
 
