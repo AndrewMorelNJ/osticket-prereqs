@@ -245,7 +245,3 @@ Continue Setting up osTicket in the browser.
 
 Click “Install Now!”
 </p>
-
-<p>
-Congrats! Your OsTicket System is offically installed!
-</p>
