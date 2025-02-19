@@ -62,16 +62,16 @@ Make an account and download the zip folder. The folder should be called “osTi
 </p>
 
 <p>
-Install / Enable IIS in Windows WITH CGI.
-  
 Go to World Wide Web Services Application, Click on Development Features, and enable CGI.
 </p>
 
 <p>
 <img src="https://i.imgur.com/G91CQUW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-  
-From the “osTicket-Installation-Files” folder, install PHP Manager for IIS
+
+<p>
+From the “osTicket-Installation-Files” folder, install PHP Manager for IIS.
+</p>
 
 <p>
 <img src="https://i.imgur.com/6LXKdbq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -88,7 +88,7 @@ From the “osTicket-Installation-Files” folder install the Rewrite Module
 <p>
 Go to "This PC", then to "Windsows (C:)", and create a new folder naemd "PHP".
 
-From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 into the “C:\PHP” folder
+From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 into the “C:\PHP” folder.
 </p>
 
 <p>
@@ -96,7 +96,7 @@ From the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 into the “C
 </p>
 
 <p>
-From the “osTicket-Installation-Files” folder, install VC Redist
+From the “osTicket-Installation-Files” folder, install VC Redist.
 </p>
 
 <p>
@@ -104,7 +104,7 @@ From the “osTicket-Installation-Files” folder, install VC Redist
 </p>
 
 <p>
-From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 & choose "Typical Setup"
+From the “osTicket-Installation-Files” folder, install MySQL 5.5.62 & choose "Typical Setup".
 </p>
 
 <p>
@@ -150,7 +150,7 @@ Finally, you can install osTicket v1.15.8.
 <p>
 From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
 
-Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”
+Within “c:\inetpub\wwwroot”, Rename “upload” to “osTicket”.
 </p>
 
 
@@ -201,7 +201,7 @@ Assign Permissions: ost-config.php
 <p>
 Continue Setting up osTicket in the browser (click Continue)
 
-- Name Helpdesk
+- Name helpdesk
 
 - Make a fake email (receives email from customers) 
 </p>
